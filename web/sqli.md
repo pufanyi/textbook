@@ -10,7 +10,7 @@ nav_order: 1
 
 SQL injection is a special case of a more broad category of attacks called code injections.
 
-As an example, consider a calculator website that accepts user input and calls `eval` in Python in the server backend to perform the calculation. For example, if a user types <code style="color: red">2+3</code> into the website, the server will run <code>eval('<span style="color: red">2+3</span>')</code> and return the result to the user.
+As an example, consider a calculator website that accepts user input and calls `eval` in Python in the server backend to perform the calculation. For example, if a user types <code style="color: red">2+3</code> into the website, the server will run <code>eval("<span style="color: red">2+3</span>")</code> and return the result to the user.
 
 If the web server is not careful about checking user input, an attacker could provide a malicious input like
 
